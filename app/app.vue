@@ -1,10 +1,8 @@
-<script setup lang="ts">
-import { RouterView } from 'vue-router';
 
-</script>
 
 <template>
   <div>
+    this my blog
  <NuxtPage/>
   
   </div>
