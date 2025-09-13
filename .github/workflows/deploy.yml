@@ -16,7 +16,7 @@ jobs:
           node-version: "20"
       # Pick your own package manager and build script
       - run: npm install
-      - run: npx nuxt build --preset github_pages
+      - run: npx nuxi generate
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
@@ -32,7 +32,7 @@ jobs:
     # Deploy to the github_pages environment
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+      url: https://walthere.github.io/
     # Specify runner + deployment step
     runs-on: ubuntu-latest
     steps:
