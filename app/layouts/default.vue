@@ -119,11 +119,7 @@
   </div>
  
 </template>
-<script lang="ts">
-const appConfig = useAppConfig()
-console.info(appConfig.value)
-console.info(appConfig)
-</script>
+
 
 
   
