@@ -38,6 +38,7 @@
           </div>
         </div>
 
+
         <!-- 侧边栏 -->
         <div class="md:w-1/3 mt-10 md:mt-0">
           <!-- 热门文章 -->
@@ -82,7 +83,7 @@
 </template>
 
 <script lang="ts" setup>
-const { data: posts } = await useAsyncData('post', () => queryCollection('post').all())
+const { data: posts } = await useAsyncData('post', () => queryCollection('post').order('date','DESC').all())
 console.info(posts)
 const { data: hotPosts } = await useAsyncData('hotPost', () => queryCollection('post').where('hot','=',true).all())
 
