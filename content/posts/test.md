@@ -1,6 +1,8 @@
 ---
 title: '我的第一篇测试博客：探索Markdown与技术写作的乐趣'
-description: '页面的元描述'
+description: '用最简单的格式，呈现最清晰的内容——Markdown基础语法实践'
+date: '2025-09-04'
+tag: 'markdown'
 ---
 # 我的第一篇测试博客：探索Markdown与技术写作的乐趣
 

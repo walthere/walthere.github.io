@@ -27,11 +27,7 @@
             >
               <i class="fa fa-search text-lg"></i>
             </button>
-            <button
-              class="p-2 text-gray-600 hover:text-secondary transition-colors"
-            >
-              <i class="fa fa-user-circle text-lg"></i>
-            </button>
+           
             <!-- 移动端菜单按钮 -->
             <button
               class="md:hidden p-2 text-gray-600 hover:text-secondary transition-colors"
@@ -84,29 +80,15 @@
           <div>
             <h4 class="text-white text-lg font-bold mb-4">图灵和铁生</h4>
             <p class="mb-4">
-              分享前沿技术资讯、深度技术解析和实战经验，助力开发者成长。
+              <!-- 分享前沿技术资讯、深度技术解析和实战经验，助力开发者成长。 -->
             </p>
             <div class="flex space-x-4">
               <a
-                href="#"
+                href="https://github.com/walthere"
                 class="text-gray-400 hover:text-white transition-colors"
                 ><i class="fa fa-github text-xl"></i
               ></a>
-              <a
-                href="#"
-                class="text-gray-400 hover:text-white transition-colors"
-                ><i class="fa fa-twitter text-xl"></i
-              ></a>
-              <a
-                href="#"
-                class="text-gray-400 hover:text-white transition-colors"
-                ><i class="fa fa-linkedin text-xl"></i
-              ></a>
-              <a
-                href="#"
-                class="text-gray-400 hover:text-white transition-colors"
-                ><i class="fa fa-weixin text-xl"></i
-              ></a>
+             
             </div>
           </div>
 
