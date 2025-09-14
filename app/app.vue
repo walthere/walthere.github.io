@@ -1,10 +1,7 @@
-
-
 <template>
   <div>
-    this my blog
- <NuxtPage/>
-  
+    <NuxtLayout>
+      <NuxtPage />
+    </NuxtLayout>
   </div>
 </template>
-
