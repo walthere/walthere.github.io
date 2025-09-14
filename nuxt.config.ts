@@ -13,5 +13,9 @@ export default defineNuxtConfig({
       link: [{ rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css' },{rel: 'stylesheet',href:'https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap'}]
     }
   },
-  
+   router: {
+    options: {
+      hashMode: true
+    }
+  },ssr:false
 });
