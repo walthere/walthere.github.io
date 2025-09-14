@@ -17,6 +17,7 @@
           <!-- 桌面导航 -->
           <nav class="hidden md:flex space-x-1">
             <a href="/" class="nav-link font-medium">文章</a>
+            <NuxtLink class="nav-link font-medium" to="/tags">分类</NuxtLink>
           
           </nav>
 

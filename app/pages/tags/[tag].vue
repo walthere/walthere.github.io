@@ -62,20 +62,7 @@
             </div>
           </div>
 
-          <!-- 技术标签云 -->
-          <div class="bg-white rounded-xl shadow-sm p-5 mb-8">
-            <h3 class="text-lg font-bold text-gray-900 mb-4">技术标签</h3>
-            <div class="flex flex-wrap gap-2">
-
-             <NuxtLink
-            v-for="value in uniqueTags"
-            :to="'/tags/'+value"
-            class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm hover:bg-blue-100 transition-colors"
-            >{{ value }}</NuxtLink
-          >
-             
-            </div>
-          </div>
+      
         </div>
       </div>
     </div>
@@ -83,23 +70,15 @@
 </template>
 
 <script lang="ts" setup>
-const { data: posts } = await useAsyncData('post', () => queryCollection('post').order('date','DESC').all())
+const route = useRoute()
+console.info('route',route)
+const tag = route.params.tag? route.params.tag:'-'
+console.info('tag',tag)
+const { data: posts } = await useAsyncData('post-'+tag, () => queryCollection('post')
+.where('tag','=',tag).order('date','DESC').all())
 console.info(posts)
 const { data: hotPosts } = await useAsyncData('hotPost', () => queryCollection('post').where('hot','=',true).all())
 
-function getUniqueTags(arr) {
-  // 边界处理：如果传入的不是数组，返回空数组
-  if (!Array.isArray(arr)) return [];
-  
-  // 提取所有有效tag（过滤null/undefined）并去重
-  return [...new Set(
-    arr.map(item => item?.tag).filter(tag => tag != null)
-  )];
-}
 
-
-
-// 步骤2：利用Set去重，再转回数组
-const uniqueTags = getUniqueTags(posts.value)
 
 </script>
