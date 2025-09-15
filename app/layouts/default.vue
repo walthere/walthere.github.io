@@ -23,11 +23,17 @@
 
           <!-- 搜索和用户按钮 -->
           <div class="flex items-center space-x-4">
-            <button
+
+
+             <NuxtLink to="/search">
+                <button
               class="p-2 text-gray-600 hover:text-secondary transition-colors"
             >
               <i class="fa fa-search text-lg"></i>
             </button>
+            
+            </NuxtLink>
+         
            
             <!-- 移动端菜单按钮 -->
             <button
