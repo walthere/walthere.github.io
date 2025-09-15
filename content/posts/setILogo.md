@@ -10,4 +10,4 @@ tag: 'markdown'
 
 >提示词 流畅线条，极简logo设计，一只戴着棒球帽的卡通小蛇，叼着烟正在编程，整体以黑白色调，简洁的线条构成，纯白色背景
 
-![Logo图片]( /img/logo.png) 
+![Logo图片]( /img/logo.jpg) 
