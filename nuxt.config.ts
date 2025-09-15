@@ -17,5 +17,6 @@ export default defineNuxtConfig({
   //   options: {
   //     hashMode: true
   //   }
-  // },ssr:false
+  // },
+   ssr:false
 });

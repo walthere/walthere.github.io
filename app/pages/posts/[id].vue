@@ -1,9 +1,7 @@
 <template>
   <div class="markdown-body p-10">
-     <ClientOnly  fallback="加载中...">
-      <ContentRenderer :value="page" />
-    </ClientOnly>
-
+   
+  <ContentRenderer :value="page" />
   </div>
 </template>
 
